@@ -2,7 +2,7 @@
 
 ## Scenario
 
-You already have a `docker` container with a SSH key configured. If you want to use a secong SSH key for git usage, how do you do that when your your first SSH key already is the default one?
+You already have a `docker` container with a SSH key configured. If you want to use a second SSH key for git usage, how do you do that when your your first SSH key already is the default one?
 
 For a guide on how to configure you SSH key in docker, see [Configure docker container with SSH access](https://github.com/Frunza/configure-docker-container-with-ssh-access)
 
