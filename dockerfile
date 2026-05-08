@@ -18,5 +18,3 @@ RUN echo "$SSH_PRIVATE_KEY_GIT" | tr -d '\r' > /root/.ssh/id_git_rsa && chmod 60
 RUN echo -e "Host git.my_company.com\n  Hostname 192.168.123.123\n  PreferredAuthentications publickey\n  IdentityFile /root/.ssh/id_git_rsa\n  StrictHostKeyChecking no" >> /root/.ssh/config
 # Add the SSH host key to known hosts
 RUN mkdir -p ~/.ssh && ssh-keyscan git.my_company.com >> ~/.ssh/known_hosts
-
-CMD ["sh"]
